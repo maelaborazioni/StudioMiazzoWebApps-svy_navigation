@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildpath>
+	<buildpathentry excluding=".stp/|medias/" kind="src" path=""/>
+	<buildpathentry exported="true" kind="prj" path="/svy_conversion"/>
+	<buildpathentry exported="true" kind="prj" path="/svy_mod_dialogs"/>
+	<buildpathentry exported="true" kind="prj" path="/svy_nav_globals"/>
+	<buildpathentry exported="true" kind="prj" path="/svy_nav_lookup_windows"/>
+	<buildpathentry exported="true" kind="prj" path="/svy_search"/>
+	<buildpathentry exported="true" kind="prj" path="/svy_sec_authenticate"/>
+	<buildpathentry exported="true" kind="prj" path="/svy_sec_login"/>
+	<buildpathentry exported="true" kind="prj" path="/svy_security"/>
+	<buildpathentry exported="true" kind="prj" path="/svy_utilities"/>
+	<buildpathentry exported="true" kind="prj" path="/svy_utl_valuelists"/>
+</buildpath>

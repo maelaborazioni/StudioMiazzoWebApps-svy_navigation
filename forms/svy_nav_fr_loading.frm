@@ -1,0 +1,102 @@
+borderType:"EmptyBorder,0,0,0,0",
+items:[
+{
+anchors:9,
+fontType:"Tahoma,1,11",
+foreground:"#ffffff",
+formIndex:10903,
+horizontalAlignment:0,
+location:"0,12",
+mediaOptions:14,
+name:"lblLogin",
+size:"400,19",
+tabSeq:-1,
+text:"i18n:svy.fr.lbl.loading...",
+transparent:true,
+typeid:7,
+uuid:"713A3DF7-6377-426F-B6BE-08D8EA7E7FC8",
+verticalAlignment:0
+},
+{
+beanClassName:"javax.swing.JProgressBar",
+beanXML:"<?xml version=\"1.0\" encoding=\"UTF-8\"?> 
+<java version=\"1.6.0_10\" class=\"java.beans.XMLDecoder\"> 
+ <object class=\"javax.swing.JProgressBar\"> 
+  <void property=\"foreground\"> 
+   <object class=\"java.awt.Color\"> 
+    <int>43<\/int> 
+    <int>54<\/int> 
+    <int>74<\/int> 
+    <int>255<\/int> 
+   <\/object> 
+  <\/void> 
+  <void property=\"size\"> 
+   <object class=\"java.awt.Dimension\"> 
+    <int>291<\/int> 
+    <int>21<\/int> 
+   <\/object> 
+  <\/void> 
+  <void property=\"name\"> 
+   <string>progress_bar<\/string> 
+  <\/void> 
+ <\/object> 
+<\/java> 
+",
+formIndex:10904,
+location:"21,62",
+name:"progress_bar",
+size:"361,21",
+typeid:12,
+uuid:"7DB62990-68CC-49CD-86FA-16B1DEBE632D"
+},
+{
+height:102,
+partType:5,
+typeid:19,
+uuid:"C6A500F6-A729-4FB6-B6CD-881F49DB402C"
+},
+{
+formIndex:9999,
+imageMediaID:"E43FFA63-4E19-4F29-9F37-4258AD22318B",
+location:"0,0",
+mediaOptions:6,
+name:"lbl_topbg",
+size:"400,41",
+tabSeq:-1,
+typeid:7,
+uuid:"CE8F03E0-6261-4243-95E5-1649B312BE37"
+},
+{
+background:"#cccccc",
+formIndex:10000,
+location:"1,40",
+mediaOptions:14,
+name:"lbl_bg",
+size:"399,61",
+tabSeq:-1,
+typeid:7,
+uuid:"E95C6BF3-76E1-407C-B756-937E29B11C21"
+},
+{
+borderType:"LineBorder,1,#666666",
+formIndex:-4,
+location:"0,0",
+mediaOptions:14,
+name:"lbl_border",
+size:"401,102",
+tabSeq:-1,
+transparent:true,
+typeid:7,
+uuid:"EEC22938-23CA-422B-8C75-85B5FAF1FC96"
+}
+],
+name:"svy_nav_fr_loading",
+navigatorID:"-1",
+onLoadMethodID:"6C1F858F-7E06-4129-A3ED-108B6D175935",
+onResizeMethodID:"-1",
+paperPrintScale:100,
+size:"401,102",
+styleName:"sampleuse_navigation",
+titleText:"i18n:svy.fr.lbl.title_empty",
+typeid:3,
+uuid:"08E37BA9-6B5E-4DFB-8A85-9301E4535651"

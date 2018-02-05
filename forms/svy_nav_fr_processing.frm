@@ -1,0 +1,24 @@
+items:[
+{
+height:480,
+partType:5,
+typeid:19,
+uuid:"82cf1c8e-d8e7-404c-841d-b76ef739ca55"
+},
+{
+location:"140,120",
+mediaOptions:14,
+size:"281,20",
+tabSeq:-1,
+text:"Your request is in procces",
+transparent:true,
+typeid:7,
+uuid:"d6488f94-395c-447d-b78c-a559315f1eaf"
+}
+],
+name:"svy_nav_fr_processing",
+navigatorID:"-1",
+paperPrintScale:100,
+size:"640,480",
+typeid:3,
+uuid:"38372377-1d18-4a7a-8d63-0e625d2ffc23"

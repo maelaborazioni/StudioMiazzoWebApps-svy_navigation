@@ -1,0 +1,9 @@
+addEmptyValue:1,
+customValues:"i18n:svy.fr.lbl.not_on_tab|0
+i18n:svy.fr.lbl.current|1
+i18n:svy.fr.lbl.detail|2",
+name:"nav_edit_on_tab",
+returnDataProviders:1,
+showDataProviders:1,
+typeid:34,
+uuid:"45E4103C-0828-4D01-AEB4-4E4DB877728B"

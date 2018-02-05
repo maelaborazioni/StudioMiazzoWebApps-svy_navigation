@@ -1,0 +1,16 @@
+dataSource:"db:/svy_framework/nav_menu_items",
+items:[
+{
+height:520,
+partType:5,
+typeid:19,
+uuid:"45A518FF-500D-4B7B-A172-1E6AD77F102D"
+}
+],
+name:"svy_nav_fr_m_menu",
+navigatorID:"-1",
+paperPrintScale:100,
+size:"200,520",
+styleName:"svy_nav",
+typeid:3,
+uuid:"EB00CED0-1E0E-4E4E-A373-1B0B618706F6"

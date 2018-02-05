@@ -1,0 +1,12 @@
+customValues:null,
+dataProviderID1:"nav_popmenu_id",
+dataProviderID2:"label",
+dataSource:null,
+name:"popmenu",
+relationName:"nav_popmenu_to_nav_popmenu$possible_parents",
+returnDataProviders:1,
+separator:null,
+showDataProviders:2,
+typeid:34,
+uuid:"4d1e2944-76d0-4e29-ae23-248f03040551",
+valueListType:1

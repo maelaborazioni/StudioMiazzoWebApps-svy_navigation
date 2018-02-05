@@ -1,0 +1,8 @@
+addEmptyValue:0,
+customValues:"i18n:svy.fr.lbl.regular_search|R
+i18n:svy.fr.lbl.advanced_search|A",
+name:"search_types",
+returnDataProviders:1,
+showDataProviders:1,
+typeid:34,
+uuid:"7D68AA13-AA06-49D3-8C00-1F59172DB5FF"

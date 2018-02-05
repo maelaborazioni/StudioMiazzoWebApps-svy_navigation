@@ -1,0 +1,12 @@
+addEmptyValue:1,
+customValues:null,
+dataProviderID1:null,
+dataProviderID2:null,
+dataSource:null,
+name:"searches_advanced",
+relationName:null,
+returnDataProviders:1,
+showDataProviders:2,
+typeid:34,
+uuid:"544F54A2-86A3-470A-8C7A-507FB2D3F127",
+valueListType:0

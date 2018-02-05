@@ -1,0 +1,13 @@
+addEmptyValue:1,
+dataProviderID1:"function_id",
+dataProviderID2:"display_description",
+dataProviderID3:"method",
+dataSource:"db:/svy_framework/nav_function",
+name:"nav_functions",
+returnDataProviders:1,
+separator:" - ",
+showDataProviders:6,
+sortOptions:"label asc",
+typeid:34,
+uuid:"ED4C91CB-D7B4-4DB8-B1E8-819471E797FA",
+valueListType:1

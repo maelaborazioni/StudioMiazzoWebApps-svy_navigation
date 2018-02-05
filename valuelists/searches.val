@@ -1,0 +1,13 @@
+addEmptyValue:1,
+customValues:null,
+dataProviderID1:"search_criteria_id",
+dataProviderID2:"name",
+dataSource:null,
+name:"searches",
+relationName:"_to_search_criteria$user_id$organization_id$search_form_name",
+returnDataProviders:1,
+separator:null,
+showDataProviders:2,
+typeid:34,
+uuid:"8378c616-ff79-468a-b595-65c900c08fb2",
+valueListType:1

@@ -1,0 +1,13 @@
+addEmptyValue:1,
+customValues:"field |1
+value|2
+globals|3
+related field|4
+method|5",
+name:"nav_expression_type",
+returnDataProviders:1,
+separator:null,
+showDataProviders:1,
+sortOptions:null,
+typeid:34,
+uuid:"37e220cd-94d0-4fc7-936c-825cea6ec77f"

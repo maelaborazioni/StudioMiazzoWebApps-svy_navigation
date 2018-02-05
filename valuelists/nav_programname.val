@@ -1,0 +1,10 @@
+dataProviderID1:"program_name",
+dataSource:"db:/svy_framework/nav_program",
+name:"nav_programname",
+returnDataProviders:1,
+separator:null,
+showDataProviders:1,
+sortOptions:"program_name asc",
+typeid:34,
+uuid:"331C0F74-8443-43D9-8403-3CCAA8A91610",
+valueListType:1

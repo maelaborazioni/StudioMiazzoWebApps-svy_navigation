@@ -1,0 +1,10 @@
+addEmptyValue:1,
+dataProviderID1:"search_criteria_id",
+dataSource:"db:/svy_framework/search_criteria",
+name:"svy_nav_search",
+returnDataProviders:1,
+separator:null,
+showDataProviders:1,
+typeid:34,
+uuid:"efaf40a2-6367-40df-9d1b-e2a511261ce2",
+valueListType:1
