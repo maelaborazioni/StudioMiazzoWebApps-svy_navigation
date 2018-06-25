@@ -29,3 +29,17 @@ function onResize(event)
 	//globals.svy_utl_saveSplitTabDividerPosition('svy_nav_fr_main','tab_split')
 }
 
+
+/**
+ * Perform the element default action.
+ *
+ * @param {JSEvent} event the event that triggered the action
+ *
+ * @private
+ *
+ * @properties={typeid:24,uuid:"9A8380D0-F908-47C2-B168-6B1D713A0634"}
+ */
+function onActionVisualizzaMessaggi(event) 
+{
+	scopes.message.showUserMessages(globals.svy_sec_lgn_user_id);
+}

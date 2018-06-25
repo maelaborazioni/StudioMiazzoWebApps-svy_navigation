@@ -15,7 +15,8 @@ styleClass:"btn_lookup",
 toolTipText:"Seleziona una ditta",
 transparent:true,
 typeid:7,
-uuid:"0E3DF000-A3CB-4F79-9EE9-B771F2A53386"
+uuid:"0E3DF000-A3CB-4F79-9EE9-B771F2A53386",
+visible:false
 },
 {
 anchors:11,
@@ -60,7 +61,8 @@ name:"fld_filtro_ditta",
 onDataChangeMethodID:"667D841F-C9C1-49DB-A7A9-567C188D09F1",
 size:"50,18",
 typeid:4,
-uuid:"6DBD2DFE-040D-4564-A170-D276D17F40A3"
+uuid:"6DBD2DFE-040D-4564-A170-D276D17F40A3",
+visible:false
 },
 {
 background:"#323232",
@@ -121,7 +123,8 @@ styleClass:"btn_filter",
 toolTipText:"Applica il filtro",
 transparent:true,
 typeid:7,
-uuid:"A706BA8F-B1D7-4375-91B6-B29E74AEAB63"
+uuid:"A706BA8F-B1D7-4375-91B6-B29E74AEAB63",
+visible:false
 },
 {
 anchors:3,
@@ -137,7 +140,8 @@ size:"18,18",
 styleClass:"btn_unfilter",
 transparent:true,
 typeid:7,
-uuid:"DA902008-ADBD-4B75-86A2-4CCA07054306"
+uuid:"DA902008-ADBD-4B75-86A2-4CCA07054306",
+visible:false
 },
 {
 anchors:3,
@@ -148,7 +152,8 @@ size:"81,18",
 text:"Nessun filtro",
 transparent:true,
 typeid:7,
-uuid:"EA4956A7-41D0-40EF-BA64-42B4AE61F63C"
+uuid:"EA4956A7-41D0-40EF-BA64-42B4AE61F63C",
+visible:false
 },
 {
 anchors:3,
