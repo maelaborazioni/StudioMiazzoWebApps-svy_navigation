@@ -1467,7 +1467,7 @@ function svy_nav_onOpen(arg, queryParams) {
 		databaseManager.switchServer(globals["svy_nav_getUserDBName"](), _userDB);
 	} else {
 		//Check if userdb is set in ownerrecord. If so, switch to it. 
-		/** @type {JSFoundset<db:/svy_framework/sec_owner>}*/
+		/** @type {JSFoundSet<db:/svy_framework/sec_owner>}*/
 		var _fs = databaseManager.getFoundSet(globals.nav_db_framework, "sec_owner");
 		_fs.loadRecords(databaseManager.convertToDataSet([globals.svy_sec_owner_id]));
 		var _userDB = _fs.database_name;
@@ -1485,7 +1485,7 @@ function svy_nav_onOpen(arg, queryParams) {
 	}
 	
 	//filter data
-	/** @type {JSFoundset<db:/svy_framework/sec_user>} */
+	/** @type {JSFoundSet<db:/svy_framework/sec_user>} */
 	var _foundset = databaseManager.getFoundSet(globals.nav_db_framework, 'sec_user')
 	var _rec
 	if(_foundset.find())
@@ -2383,7 +2383,7 @@ function svy_nav_onClose(force) {
 	}
 	
 	// register logout
-	/** @type {JSFoundset<db:/svy_framework/sec_user_login_attempt>} */
+	/** @type {JSFoundSet<db:/svy_framework/sec_user_login_attempt>} */
 	var _fs_loginAttempt = databaseManager.getFoundSet(globals.nav_db_framework, 'sec_user_login_attempt');
 	if (_fs_loginAttempt.find()) {
 		_fs_loginAttempt.user_id = globals.svy_sec_lgn_user_id;
@@ -3492,7 +3492,7 @@ function svy_nav_dc_onRightClick(_event, _function) {
  */
 function svy_nav_c_nodeSelected(_menu_item_id) {
 
-	/** @type {JSFoundset<db:/svy_framework/nav_menu_items>} */
+	/** @type {JSFoundSet<db:/svy_framework/nav_menu_items>} */
 	var _foundset = databaseManager.getFoundSet(forms.svy_nav_c_menu_item_dtl.controller.getDataSource())
 
 	if (_foundset.find()) {
@@ -3575,7 +3575,7 @@ function svy_nav_c_nodeSelected(_menu_item_id) {
  */
 function svy_nav_setShortKeys(_function_array) {
 
-	/** @type {JSFoundset<db:/svy_framework/nav_shortkey>} */
+	/** @type {JSFoundSet<db:/svy_framework/nav_shortkey>} */
 	var _foundset = databaseManager.getFoundSet(globals.nav_db_framework, 'nav_shortkey')
 	var _rec
 	var _shortcut
@@ -3680,7 +3680,7 @@ function svy_nav_get_functions() {
  * @author Sanneke Aleman
  * @since 2010-03-03
  * @param {JSForm} _jsForm the form where you want to place elements on
- * @param {JSFoundset<db:/svy_framework/sec_user_table_properties>} _foundset the foundset of elements you want to place on the form
+ * @param {JSFoundSet<db:/svy_framework/sec_user_table_properties>} _foundset the foundset of elements you want to place on the form
  * @param {Array} [_fixedElements] fixed elements of the design-time form which should be generated
  * 
  * @properties={typeid:24,uuid:"D7CF0A2F-D6A5-4E00-8F14-CFD8EA50337F"}
@@ -3790,7 +3790,7 @@ function svy_nav_placeElementsOnForm(_jsForm, _foundset, _fixedElements) {
  * @AllowToRunInFind
  */
 function svy_nav_createTableView(_event, _tableViewID, _applyNewFoundset) {
-	/** @type {JSFoundset<db:/svy_framework/sec_user_table_properties>} */
+	/** @type {JSFoundSet<db:/svy_framework/sec_user_table_properties>} */
 	var _foundset = databaseManager.getFoundSet(globals.nav_db_framework, 'sec_user_table_properties')
 	_foundset.addFoundSetFilterParam('user_table_view_id', '=', _tableViewID)
 	_foundset.addFoundSetFilterParam('user_id', '=', globals.svy_sec_lgn_user_id);
@@ -3826,7 +3826,7 @@ function svy_nav_createTableView(_event, _tableViewID, _applyNewFoundset) {
 
 	forms[_form].controller.recreateUI()
 	
-	/** @type {JSFoundset<db:/svy_framework/nav_user_table_view>} */
+	/** @type {JSFoundSet<db:/svy_framework/nav_user_table_view>} */
 	var _foundsetTableView = databaseManager.getFoundSet(globals.nav_db_framework, 'nav_user_table_view');
 	_foundsetTableView.addFoundSetFilterParam('user_table_view_id', '=', _tableViewID);
 	_foundsetTableView.addFoundSetFilterParam('user_id', '=', globals.svy_sec_lgn_user_id);
@@ -3862,7 +3862,7 @@ function svy_nav_createDefaultTableView(_program, _form) {
 	globals.nav.program[_program].table_created = 1
 
 	//get an id
-	/** @type {JSFoundset<db:/svy_framework/nav_user_table_view>} */
+	/** @type {JSFoundSet<db:/svy_framework/nav_user_table_view>} */
 	var _foundset = databaseManager.getFoundSet(globals.nav_db_framework, 'nav_user_table_view')
 	_foundset.addFoundSetFilterParam('program_name', '=', _program)
 	_foundset.addFoundSetFilterParam('flag_system', '=', 1)
@@ -3882,7 +3882,7 @@ function svy_nav_createDefaultTableView(_program, _form) {
 		_foundset.organization_id = globals.svy_sec_lgn_organization_id;
 		_foundset.name = 'System'
 
-		/** @type {JSFoundset<db:/svy_framework/sec_user_table_properties>} */
+		/** @type {JSFoundSet<db:/svy_framework/sec_user_table_properties>} */
 		var _foundset_prop = databaseManager.getFoundSet(globals.nav_db_framework, 'sec_user_table_properties')
 
 //		var _rec_field
@@ -4257,7 +4257,7 @@ function svy_nav_changeOrganization(oldValue, newValue, event) {
 	var _user_org_id;
 	var _reset = true;
 
-	/** @type {JSFoundset<db:/svy_framework/sec_user_org>} */
+	/** @type {JSFoundSet<db:/svy_framework/sec_user_org>} */
 	var _fsUserOrg = databaseManager.getFoundSet(globals.nav_db_framework, 'sec_user_org');
 //	var _found = false;
 	
@@ -4372,7 +4372,7 @@ function svy_nav_getRequiredFields(_progObj) {
 	var _fs_fields, _fs_fields_size, _rec_fields
 	
 	//get the required fields for a program
-	/** @type {JSFoundset<db:/svy_framework/nav_program_fields>} */
+	/** @type {JSFoundSet<db:/svy_framework/nav_program_fields>} */
 	_fs_fields = databaseManager.getFoundSet(globals.nav_db_framework,'nav_program_fields')
 	_fs_fields.addFoundSetFilterParam('program_name','=',_progObj.program_name)
 	_fs_fields.addFoundSetFilterParam('flag_required','=',1)
@@ -4648,7 +4648,7 @@ function svy_nav_loseFocus() {
 function svy_nav_checkValidationRules(_progObj,_form) {
 	
 	//look what the validation rules are
-	/** @type {JSFoundset<db:/svy_framework/nav_field_validation_rule>} */
+	/** @type {JSFoundSet<db:/svy_framework/nav_field_validation_rule>} */
 	var _fs_rules = databaseManager.getFoundSet(globals.nav_db_framework,'nav_field_validation_rule')
 	_fs_rules.addFoundSetFilterParam('program_name','=',_progObj.program_name)
 	_fs_rules.sort('dataprovider asc, sequence asc', true)
@@ -4722,7 +4722,7 @@ function svy_nav_history_moveFromPopmenu(_arg1, _arg2, _arg3, _arg4, _arg5, _eve
  */
 function svy_nav_callFunction(_function_id) {
 	
-	/** @type {JSFoundset<db:/svy_framework/nav_function>} */
+	/** @type {JSFoundSet<db:/svy_framework/nav_function>} */
 	var _fs_function = databaseManager.getFoundSet(globals.nav_db_framework,'nav_function')
 	_fs_function.addFoundSetFilterParam('function_id','=',_function_id)
 	_fs_function.loadAllRecords()

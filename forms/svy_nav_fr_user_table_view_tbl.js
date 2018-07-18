@@ -107,7 +107,7 @@ function deleteRecord(event) {
 	if(_answer == true)
 	{
 		if (foundset.search_type == 'A') {
-			/** @type {JSFoundset<db:/svy_framework/nav_advanced_search>} */
+			/** @type {JSFoundSet<db:/svy_framework/nav_advanced_search>} */
 			var _fsAdvancedSearch = databaseManager.getFoundSet(globals.nav_db_framework, 'nav_advanced_search');
 			_fsAdvancedSearch.find();
 			_fsAdvancedSearch.nav_advanced_search_id = foundset.search_id;

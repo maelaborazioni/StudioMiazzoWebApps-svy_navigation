@@ -82,7 +82,7 @@ function listMenu(event) {
 	}
 	else //show the default
 	{
-		/** @type {JSFoundset<db:/svy_framework/nav_user_table_view>} */
+		/** @type {JSFoundSet<db:/svy_framework/nav_user_table_view>} */
 		_foundset = databaseManager.getFoundSet(globals.nav_db_framework, 'nav_user_table_view')
 		_foundset.addFoundSetFilterParam('user_id','=', globals.svy_sec_lgn_user_id);
 		_foundset.addFoundSetFilterParam('organization_id','=', globals.svy_sec_lgn_organization_id)
@@ -95,7 +95,7 @@ function listMenu(event) {
 		
 	}
 	 popupmenu.addSeparator()
-	/** @type {JSFoundset<db:/svy_framework/nav_user_table_view>} */
+	/** @type {JSFoundSet<db:/svy_framework/nav_user_table_view>} */
 	_foundset = databaseManager.getFoundSet(globals.nav_db_framework, 'nav_user_table_view')
 	_foundset.addFoundSetFilterParam('user_id','=', globals.svy_sec_lgn_user_id);
 	_foundset.addFoundSetFilterParam('organization_id','=', globals.svy_sec_lgn_organization_id);
@@ -144,7 +144,7 @@ function createTableView() {
  * @properties={typeid:24,uuid:"FD308652-5426-450E-B0BC-7A10D59948B4"}
  */
 function editTableView() {
-	/** @type {JSFoundset<db:/svy_framework/nav_user_table_view>} */
+	/** @type {JSFoundSet<db:/svy_framework/nav_user_table_view>} */
 	var _foundset = databaseManager.getFoundSet(globals.nav_db_framework, 'nav_user_table_view')
 	_foundset.addFoundSetFilterParam('user_id','=', globals.svy_sec_lgn_user_id);
 	_foundset.addFoundSetFilterParam('organization_id','=', globals.svy_sec_lgn_organization_id);

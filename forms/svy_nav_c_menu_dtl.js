@@ -32,7 +32,7 @@ function refreshTree(_event,_select)
 		databaseManager.saveData()
 		
 		// set the tree with the right items
-		/** @type {JSFoundset<db:/svy_framework/nav_menu_items>} */  
+		/** @type {JSFoundSet<db:/svy_framework/nav_menu_items>} */  
 		var _foundset = databaseManager.getFoundSet(forms.svy_nav_c_menu_item_dtl.controller.getDataSource())
 		
 		if(_foundset.find())

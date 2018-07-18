@@ -1770,7 +1770,7 @@ function dc_help(_event) {
 	}
 
 	// find the help record for this program, if there is none, create one
-	/** @type {JSFoundset<db:/svy_framework/nav_help>} */
+	/** @type {JSFoundSet<db:/svy_framework/nav_help>} */
 	var _foundset = forms[_form].foundset
 	if (_foundset.find()) {
 		_foundset.program_name = globals.nav_program_name
@@ -2067,7 +2067,7 @@ function toggleRequiredField(_event)
 function saveRequiredFields()
 {
 	var _progObj = globals.nav.program[globals.nav_program_name]
-	/** @type {JSFoundset<db:/svy_framework/nav_user_required_field>} */
+	/** @type {JSFoundSet<db:/svy_framework/nav_user_required_field>} */
 	var _fs = databaseManager.getFoundSet(globals.nav_db_framework,'nav_user_required_field')                                   
 	for(var i in _progObj.required_fields)
 	{

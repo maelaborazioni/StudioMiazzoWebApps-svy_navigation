@@ -303,7 +303,7 @@ function removeData(event) {
 									
 		
 		// create new owner
-		/** @type {JSFoundset<db:/svy_framework/sec_owner>} */
+		/** @type {JSFoundSet<db:/svy_framework/sec_owner>} */
 		var _fs_owner = databaseManager.getFoundSet(globals.nav_db_framework,'sec_owner')	
 		_fs_owner.newRecord()
 		_fs_owner.license_amount = 5
@@ -315,7 +315,7 @@ function removeData(event) {
 		_fs_owner.sec_owner_to_sec_organization.name = 'Servoy NL'
 		
 		// create new user
-		/** @type {JSFoundset<db:/svy_framework/sec_user>} */
+		/** @type {JSFoundSet<db:/svy_framework/sec_user>} */
 		var _fs_user = databaseManager.getFoundSet(globals.nav_db_framework,'sec_user')
 		_fs_user.newRecord()
 		_fs_user.user_name = 'superuser'
@@ -330,7 +330,7 @@ function removeData(event) {
 		_fs_user.sec_user_to_sec_user_org.organization_id = _fs_owner.sec_owner_to_sec_organization.organization_id
 		
 		// create new password
-		/** @type {JSFoundset<db:/svy_framework/sec_user_password>} */
+		/** @type {JSFoundSet<db:/svy_framework/sec_user_password>} */
 		var _fs_password = databaseManager.getFoundSet(globals.nav_db_framework,'sec_user_password')	
 		_fs_password.newRecord()
 		_fs_password.start_date = new Date()
