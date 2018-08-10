@@ -1973,10 +1973,12 @@ function svy_nav_showForm(_form, _program, _showAll, _orgTableView, _forcedTabNr
 					_value = _value.replace(/(globals\.\w*)/, eval(_global));
 				}
 				// daniele: give the filter a name if the user feel so
-				_progObj.foundset.addFoundSetFilterParam(_progObj.filter[j].filter_field_name, _progObj.filter[j].filter_operator, _value, _progObj.filter[j].filter_name)
+				// Gio : control if value exists otherwise it raises an error
+				if(_value)
+				   _progObj.foundset.addFoundSetFilterParam(_progObj.filter[j].filter_field_name, _progObj.filter[j].filter_operator, _value, _progObj.filter[j].filter_name)
 			}
-			_progObj.foundset.loadAllRecords()
-			forms[_form].controller.loadRecords(_progObj.foundset)
+			_progObj.foundset.loadAllRecords();
+			forms[_form].controller.loadRecords(_progObj.foundset);
 		}
 	}
 
