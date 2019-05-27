@@ -5170,11 +5170,11 @@ function svy_nav_newRecordOnTabProgram(event, _program) {
 function svy_nav_logout(event)
 {
 	// MODIFICA del 18/06/2015 per ovviare al problema della cittadinanza in entrata --- non è stato sufficiente...
-//	var serverUrl = '/servoy-webclient/ss/s/StudioMiazzoWebApps';
+//	var serverUrl = '/servoy-webclient/ss/s/PresenzaSemplice';
 //    application.showURL(serverUrl,'_self');
 
 	// MODIFICA del 27/11/2017 post Servoy 8
-	var serverUrl = 'https://webapp.studiomiazzo.it/servoy-webclient/ss/s/StudioMiazzoWebApps';
+	var serverUrl = 'https://webapp.peoplegest.it/login.html';
     application.showURL(serverUrl,'_self');
     application.exit();
 }
