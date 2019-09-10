@@ -1016,25 +1016,19 @@ function dc_sort(_form, _program, _defer) {
 
 	}
 
-
 	if (_defer == undefined) _defer = false
 
 	if (globals.nav.program[_program].sort_value) {
 		if (_form == globals.svy_nav_form_name) {
 			//only sort if the current sort is different
 			if(globals.nav.program[_program].foundset.getCurrentSort() != globals.nav.program[_program].sort_value)
-			{
-				globals.nav.program[_program].foundset.sort(globals.nav.program[_program].sort_value, _defer)
-			}
+			   globals.nav.program[_program].foundset.sort(globals.nav.program[_program].sort_value, _defer)
 		} else {
 			//only sort if the current sort is different
 			if(forms[_form].foundset.getCurrentSort() != globals.nav.program[_program].sort_value)
-			{
-				forms[_form].foundset.sort(globals.nav.program[_program].sort_value, _defer)
-			}
+			   forms[_form].foundset.sort(globals.nav.program[_program].sort_value, _defer)
 		}
 	}
-
 }
 
 /**
@@ -1363,7 +1357,7 @@ function dc_find(_event, _triggerForm) {
  * @SuppressWarnings(unused)
  */
 function dc_save(_event, _triggerForm, _forceForm) {
-	var _args = globals.svy_nav_dc_getInfo(_event, _triggerForm);
+ 	var _args = globals.svy_nav_dc_getInfo(_event, _triggerForm);
     var _form = _args[0]
     var _form_to = _args[1]
 	var _program = _args[2]
@@ -1383,9 +1377,6 @@ function dc_save(_event, _triggerForm, _forceForm) {
 		globals.svy_nav_dc_setStatus('browse', _form)
 		return 1
 	}
-
-
-
 
 	var _table = databaseManager.getDataSourceTableName(forms[_form].controller.getDataSource())
 
@@ -1412,7 +1403,7 @@ function dc_save(_event, _triggerForm, _forceForm) {
 	/** @type {String} */
 	var _ex
 
-		// save with output if the save went wrong
+	// save with output if the save went wrong
 	if (!databaseManager.saveData()) {
 		_failedArray = databaseManager.getFailedRecords()
 		for (i = 0; i < _failedArray.length; i++) {

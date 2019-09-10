@@ -97,8 +97,7 @@ var vTabWidth = 175;
 function drawTab(_event, _program, _forcedSelected) {
 
 	var _multiTab = false	
-	 
-	
+		
 	if(globals.svy_nav_multi_tab_programs && (globals.nav.openNewTab || vRemoveTab))
 	{
 		_multiTab = true
