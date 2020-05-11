@@ -291,7 +291,7 @@ function set_i18n_field() {
 function setTableServer() {
 	
 	if (base_form_name && base_form_name != '-no form-') {
-		for (var i = 0; i < form_object.length; i++) {
+		for (var i = 0; i < form_object['length']; i++) {
 			if (form_object[i][3] && forms[form_object[i][2]]) { // 3-available 2-formname
 				form_name = form_object[i][2]
 				table_name = databaseManager.getDataSourceTableName(forms[form_object[i][2]].controller.getDataSource())

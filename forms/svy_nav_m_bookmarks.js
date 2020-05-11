@@ -11,7 +11,7 @@ function showRecord_ids()
 {
 	var _message = ''
 		
-	for (var i = 0; i < record_ids.length; i++) {
+	for (var i = 0; i < record_ids['length']; i++) {
 		_message += 'Position '+i + ':'+ record_ids[i] +'\n'
 	}
 	
@@ -34,7 +34,7 @@ function showRecord_idsNames()
 
 	var _message = ''
 		
-	for (var i = 0; i < record_ids_names.length; i++) {
+	for (var i = 0; i < record_ids_names['length']; i++) {
 		_message += 'Position '+i + ':'+ record_ids_names[i] +'\n'
 	}
 	
@@ -57,7 +57,7 @@ function showRecord_idsTypes()
 
 	var _message = ''
 		
-	for (var i = 0; i < record_ids_types.length; i++) {
+	for (var i = 0; i < record_ids_types['length']; i++) {
 		_message += 'Position '+i + ':'+ record_ids_types[i] +'\n'
 	}
 	

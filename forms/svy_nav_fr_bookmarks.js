@@ -85,7 +85,7 @@ function loadBookmarks()
 					var _jsRelation = solutionModel.newRelation( _relation,  controller.getDataSource(), _jsDataSource,  JSRelation.INNER_JOIN);		
 									
 					//relation to get to the related record
-					for (var i = 0; i < record_ids_names.length; i++) {
+					for (var i = 0; i < record_ids_names['length']; i++) {
 						var _globalName = 'bookmark' + record_ids_names[i] + bookmark_id
 						if(!solutionModel.getGlobalVariable('globals',_globalName))
 						{	                                  

@@ -2448,7 +2448,7 @@ function svy_nav_history_menu(_event) {
  *
  * @author Sanneke Aleman
  * @since 2007-05-24
- * @param {String}	_array you want to edit
+ * @param {Array}	_array you want to edit
  * @param {String}	_form you want to save youre edited array to
  * @param {String}	_field you want to save youre edited array to
  * @return  none
